@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura Rural e Urbana - Agrinho 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cultura Rural e Urbana</h1>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..." alt="Agrinho 2025" class="agrinho-img">
+        <nav>
+            <button onclick="showSection('rural')">Cultura Rural</button>
+            <button onclick="showSection('urbana')">Cultura Urbana</button>
+            <button onclick="showSection('semelhancas')">Semelhanças</button>
+            <button onclick="showSection('diferencas')">Diferenças</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="rural" class="content">
+            <h2>Cultura Rural</h2>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQE..." alt="Imagem rural">
+            <p>A cultura rural está ligada ao campo, ao trabalho agrícola, à vida simples e tradições passadas de geração em geração. Ela valoriza o contato com a natureza e a comunidade.</p>
+        </section>
+
+        <section id="urbana" class="content">
+            <h2>Cultura Urbana</h2>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQE..." alt="Imagem urbana">
+            <p>A cultura urbana está relacionada às cidades, com seus modos de vida acelerados, tecnologias, diversidade de expressões artísticas, consumo e inovação.</p>
+        </section>
+
+        <section id="semelhancas" class="content">
+            <h2>Semelhanças</h2>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQE..." alt="Imagem de semelhanças">
+            <p>Ambas as culturas buscam preservar suas tradições e modos de vida. Expressam identidade por meio de arte, culinária, festas e costumes sociais.</p>
+        </section>
+
+        <section id="diferencas" class="content">
+            <h2>Diferenças</h2>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQE..." alt="Imagem de diferenças">
+            <p>Enquanto a rural é mais ligada à terra e à natureza, a urbana se relaciona com inovação, ritmo acelerado e vida nas cidades. As formas de trabalho, lazer e relações sociais também diferem.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto Agrinho 2025</p>
+    </footer>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.content').forEach(sec => sec.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+
+        // Mostrar a primeira seção por padrão
+        showSection('rural');
+    </script>
+</body>
+</html>
